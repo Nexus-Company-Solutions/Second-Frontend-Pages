@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Donate - iKhwezi Foundation";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .donate-section {
+            background-color: #E8F1F2;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .testimonials-section {
+            background-color: #F5E0C3;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="donate-section">
+            <h2>Why Donate?</h2>
+            <p>
+                At the iKhwezi Foundation, your donations play a crucial role in transforming lives and communities.
+                Your generosity enables us to provide essential support, education, and opportunities to those facing adversity.
+                With your help, we can make a tangible difference in the lives of individuals and families, fostering positive
+                change and building a brighter future for all.
+            </p>
+            <button class="btn btn-primary mb-3">Learn More</button>
+            <form>
+                <div class="form-group">
+                    <label for="donationAmount">Amount:</label>
+                    <input type="number" class="form-control" id="donationAmount" placeholder="$">
+                </div>
+                <button type="submit" class="btn btn-success">Donate</button>
+                <button type="submit" class="btn btn-primary">PayPal</button>
+            </form>
+        </div>
+
+        <div class="testimonials-section">
+            <h3>Testimonials</h3>
+            <p>"Real Stories, Real Impact: Hear from our Generous Supporters at iKhwezi Foundation."</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <h5>Emma Gonzalez</h5>
+                        <p>★★★★★</p>
+                        <p>Supporting iKhwezi Foundation brings me immense satisfaction. Their impactful work in communities reaffirms my belief in their mission.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <h5>Sarah Johnson</h5>
+                        <p>Thanks to iKhwezi Foundation's support, I've overcome challenges and built a better future for my family. Their belief in us is empowering.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <h5>Elizabeth Anderson</h5>
+                        <p>★★★★★</p>
+                        <p>Donating to iKhwezi Foundation is incredibly rewarding. Their dedication to making a difference fills me with hope for a better world.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-secondary mt-3">Write yours</button>
+        </div>
+    </div>
+</body>
+</html>
