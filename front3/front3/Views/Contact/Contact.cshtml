@@ -1,0 +1,198 @@
+﻿@{
+    ViewData["Title"] = "Contact Us - iKhwezi Foundation";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .header, .footer {
+            background-color: #254c32;
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+            .header .logo img {
+                height: 60px;
+            }
+
+            .header .donate-button {
+                background-color: #216e39;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+            .footer .footer-content {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .footer .footer-logo img {
+                height: 100px;
+                margin-right: 20px;
+            }
+
+            .footer .footer-links a {
+                color: white;
+                margin: 0 10px;
+                text-decoration: none;
+            }
+
+            .footer .footer-socials a img {
+                width: 24px;
+                height: 24px;
+                margin: 0 10px;
+            }
+
+            .footer .footer-bottom p {
+                margin-top: 10px;
+            }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+            .contact-info img {
+                height: 250px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+
+            .contact-info div {
+                font-size: 18px;
+                text-align: center;
+            }
+
+                .contact-info div p {
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                    .contact-info div p i {
+                        margin-right: 10px;
+                        font-size: 24px;
+                        color: #216e39;
+                    }
+
+        .newsletter {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #DB8B22;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+            .newsletter h2 {
+                margin-bottom: 10px;
+                color: white;
+            }
+
+            .newsletter form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .newsletter input[type="email"] {
+                flex: 1;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-right: none;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            .newsletter button {
+                padding: 10px;
+                border: 1px solid #ccc;
+                background-color: #333;
+                color: #fff;
+                cursor: pointer;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+    </style>
+</head>
+<body>
+
+    <main class="bg-gray-100 min-h-screen flex justify-center items-center">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
+            <h1 class="text-4xl font-bold text-green-700 mb-6 text-center">Contact Us</h1>
+
+            <div class="contact-info">
+                <img src="~/Images/ContactInfo.jpg" alt="Contact Information">
+                <div>
+                    <p><i class="fas fa-map-marker-alt"></i>Address: 2065 Kloof Street, KZN</p>
+                    <p><i class="fas fa-envelope"></i>Email: ikhwezifoundation@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>Number: 031 457 3830</p>
+                </div>
+            </div>
+
+            <form class="bg-gray-50 p-6 rounded-lg shadow mt-6">
+                <div class="mb-4">
+                    <label for="name" class="block text-green-700 mb-2 font-semibold">Name:</label>
+                    <input id="name" type="text" class="border border-gray-300 p-2 rounded w-full text-black" placeholder="Enter your name" />
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-green-700 mb-2 font-semibold">Email:</label>
+                    <input id="email" type="email" class="border border-gray-300 p-2 rounded w-full text-black" placeholder="Enter your Email" />
+                </div>
+                <div class="mb-4">
+                    <label for="subject" class="block text-green-700 mb-2 font-semibold">Subject:</label>
+                    <input id="subject" type="text" class="border border-gray-300 p-2 rounded w-full text-black" placeholder="Enter the subject" />
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-green-700 mb-2 font-semibold">Message:</label>
+                    <textarea id="message" class="border border-gray-300 p-2 rounded w-full text-black" placeholder="Enter your message"></textarea>
+                </div>
+                <div class="text-center">
+                    <button class="bg-green-700 text-white px-4 py-2 rounded shadow hover:bg-green-800">
+                        Submit
+                    </button>
+                </div>
+            </form>
+
+            <section class="newsletter">
+                <h2>Subscribe to our newsletter today!</h2>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+﻿@{
+    ViewData["Title"] = "Donate - iKhwezi Foundation";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .donate-section {
+            background-color: #E8F1F2;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .testimonials-section {
+            background-color: #F5E0C3;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+            .testimonial-card h5 {
+                font-size: 18px;
+                font-weight: bold;
+                color: #87331d;
+            }
+
+            .testimonial-card p {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-bottom: 10px;
+            }
+
+        .footer {
+            background-color: #254c32;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo img {
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer-socials img {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+
+        .footer-bottom p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    
+
+    <div class="container">
+        <div class="donate-section">
+            <h2 class="text-2xl font-bold text-green-700 mb-4">Why Donate?</h2>
+            <p class="text-lg mb-4">
+                At the iKhwezi Foundation, your donations play a crucial role in transforming lives and communities.
+                Your generosity enables us to provide essential support, education, and opportunities to those facing adversity.
+                With your help, we can make a tangible difference in the lives of individuals and families, fostering positive
+                change and building a brighter future for all.
+            </p>
+            <button class="btn btn-primary mb-3">Learn More</button>
+            <form>
+                <div class="form-group">
+                    <label for="donationAmount">Amount (ZAR):</label>
+                    <input type="number" class="form-control" id="donationAmount" placeholder="R">
+                </div>
+                <button type="submit" class="btn btn-success">Donate</button>
+                <button type="submit" class="btn btn-primary">PayPal</button>
+            </form>
+        </div>
+
+        <div class="testimonials-section">
+            <h3 class="text-xl font-bold text-green-700 mb-4">Testimonials</h3>
+            <p class="text-lg mb-4">"Real Stories, Real Impact: Hear from our Generous Supporters at iKhwezi Foundation."</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <h5>Emma Gonzalez</h5>
+                        <p>★★★★★</p>
+                        <p>Supporting iKhwezi Foundation brings me immense satisfaction. Their impactful work in communities reaffirms my belief in their mission.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <h5>Sarah Johnson</h5>
+                        <p>★★★★★</p>
+                        <p>Thanks to iKhwezi Foundation's support, I've overcome challenges and built a better future for my family. Their belief in us is empowering.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <h5>Elizabeth Anderson</h5>
+                        <p>★★★★★</p>
+                        <p>Donating to iKhwezi Foundation is incredibly rewarding. Their dedication to making a difference fills me with hope for a better world.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-secondary mt-3">Write yours</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>

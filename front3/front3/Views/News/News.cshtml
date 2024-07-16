@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's New - iKhwezi Foundation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-areas:
+                "large large small small small"
+                "large large small small small"
+                "large large small small small";
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            .gallery .large-image {
+                grid-area: large;
+                width: 100%;
+                height: 100%;
+            }
+
+            .gallery .small-image {
+                width: 100%;
+                height: 100px;
+            }
+
+                .gallery .large-image img,
+                .gallery .small-image img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="news-section">
+            <article class="news-item">
+                <img src="~/Images/sfs.png" alt="School Feeding Schemes">
+                <div class="news-content">
+                    <h2>School Feeding Schemes</h2>
+                    <p>"Kloof Schools Launch Innovative School Feeding Scheme to Ensure Every Child Thrives"</p>
+                    <p class="date">26/06/2023</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </article>
+            <article class="news-item">
+                <img src="~/Images/comdev.png" alt="Community Development">
+                <div class="news-content">
+                    <h2>Community Development</h2>
+                    <p>"Empowering Rural Communities: New Initiatives Drive Sustainable Development in Remote Areas"</p>
+                    <p class="date">24/06/2023</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </article>
+            <article class="news-item">
+                <img src="~/Images/food.png" alt="Food Drives">
+                <div class="news-content">
+                    <h2>Food Drives</h2>
+                    <p>"Community Unites: Food Drive Brings Hope to Underdeveloped Suburbs in KZN"</p>
+                    <p class="date">18/06/2023</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </article>
+        </section>
+        <button class="view-more">View more</button>
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <div class="large-image">
+                <img src="~/Images/gal1.png" alt="Gallery Image 1">
+            </div>
+            <div class="small-image">
+                <img src="~/Images/gal2.png" alt="Gallery Image 2">
+            </div>
+            <div class="small-image">
+                <img src="~/Images/gal3.png" alt="Gallery Image 3">
+            </div>
+            <div class="small-image">
+                <img src="~/Images/gal4.png" alt="Gallery Image 4">
+            </div>
+            <div class="small-image">
+                <img src="~/Images/gal5.png" alt="Gallery Image 5">
+            </div>
+            <div class="small-image">
+                <img src="~/Images/gal6.png" alt="Gallery Image 6">
+            </div>
+            <div class="small-image">
+                <img src="~/Images/gal7.png" alt="Gallery Image 7">
+            </div>
+            <div class="small-image">
+                <img src="~/Images/gal8.png" alt="Gallery Image 8">
+            </div>
+            <div class="small-image">
+                <img src="~/Images/gal9.png" alt="Gallery Image 9">
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
