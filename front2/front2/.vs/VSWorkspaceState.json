@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Views",
+    "\\Views\\Contact",
+    "\\Views\\Donations",
+    "\\Views\\Help",
+    "\\Views\\Shared",
+    "\\wwwroot",
+    "\\wwwroot\\css",
+    "\\wwwroot\\lib",
+    "\\wwwroot\\lib\\Images"
+  ],
+  "SelectedNode": "\\Views\\News\\News.cshtml",
+  "PreviewInSolutionExplorer": false
+}
